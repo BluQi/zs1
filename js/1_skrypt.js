@@ -1,3 +1,3 @@
-document.write('Marcin Kalinski<br>');
-alert('Pierwsza strona');
+document.write('skrypt z pliku zewnetrznego<br>');
+alert('YGHHH!');
 console.log('konsola');
