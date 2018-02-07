@@ -1,4 +1,4 @@
-aler('ahtung');
+alert('ahtung');
 var a = 10, b = "5a";
 var wynik = a + b;
 //alert(wynik);
