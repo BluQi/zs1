@@ -7,8 +7,8 @@
 <body>
     <div id="wynik">treść</div>
      <script>
-         var elwynik = document.getElementById('wynik');
-    document.write("<h3>Systemy liczbowe</h3>");
+       var elwynik = document.getElementById('wynik');
+         document.write("<h3>Systemy liczbowe</h3>");
        var dziesietna = 15;
        var oktalna = 0o12;
          elwynik.style.color = '#0a00ff';
@@ -24,10 +24,15 @@
          var zamienHex = '0x' + szestnastkowa;
          zamienHex = Number(zamienHex);
          console.log(typeof(zamienHex));
-         document.write(zamienHex)
          elwynik.innerHTML ='(' + szestnastkowa + ')<sub>16</sub> = (' + zamienHex + ")<sub>10</sub>";
 
 //zad dom napisz program konwertujący system oktalny na decymalny
+
+         var oktal = prompt('Podaj liczbę ósemkową');
+         var zmienoktal = '0o' + oktal;
+         zmienoktal = Number(zmienoktal);
+         console.log(typeof(zmienoktal));
+         document.write('<br>(' + oktal + ')<sub>8</sub> = (' + zmienoktal + ")<sub>10</sub>");
 
     </script>
 
