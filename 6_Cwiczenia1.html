@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cwicz</title>
+</head>
+<body>
+<!--Obliczanie pola kwadratu-->
+  <div id="wynik"></div>
+  <div id="wynik2"></div>
+
+<script>
+  var elwynik = document.getElementById("wynik");
+  var elwynik2 = document.getElementById("wynik2");
+  var bok = prompt("Podaj dlugosc boku");
+  bok=Number(bok);
+  var obwod = 4 * bok;
+  var pole = bok * bok;
+  console.log(pole);
+  pole = pole.toFixed(2);
+  elwynik.innerHTML = pole;
+  elwynik2.innerHTML = obwod;
+
+</script>
+
+</body>
+
+</html>
