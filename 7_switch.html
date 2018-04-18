@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Switch</title>
+    </head>
+    <body>
+    <script>
+      //var dzientyg = Number(prompt ('Podaj jaki dzis jest dzień tyg, np. 1 - poniedzialek'));
+
+      //var miasto = prompt('Podaj z jakiego miasta jesteś','np. Poznań ');
+
+      /*switch (dzientyg){
+        case 1:
+            dzientyg = 'Poniedziałek' ;
+          document.write('Dzisiaj jest : ' + dzientyg);
+          break;
+
+        case 2:
+           dzientyg = 'wtorek';
+          document.write('Dzisiaj jest : ' + dzientyg);
+          break;
+
+        case 3:
+          dzientyg = 'Środa';
+        document.write('Dzisiaj jest : ' + dzientyg);
+          break;
+
+        case 4:
+          dzientyg = 'Czwartek';
+        document.write('Dzisiaj jest : ' + dzientyg);
+          break;
+
+        case 5:
+          dzientyg = 'Piątek';
+        document.write('Dzisiaj jest : ' + dzientyg);
+          break;
+
+        case 6:
+          dzientyg = 'Sobota';
+        document.write('Dzisiaj jest : ' + dzientyg);
+          break;
+
+        case 7:
+          dzientyg = 'Niedziela';
+        document.write('Dzisiaj jest : ' + dzientyg);
+          break;
+
+        default:
+          document.write('Janusz podałeś błędne dane');
+      }*/
+
+      /*switch (miasto){
+
+        case 'Poznań':
+          var pilka = prompt('Czy lubisz piłkę nożną?', 'Tak/Nie' );
+          if (pilka == 'tak'){
+            document.write('Lech Poznań');
+          }else{
+            document.write('Nie jesteś fanem piłki nożnej');
+          }
+          break;
+
+        case 'Swarzędz':
+          var pilka = prompt('Czy lubisz piłkę nożną?', 'Tak/Nie' );
+          if (pilka == 'tak'){
+            document.write('Unia Swarzędz');
+          }else{
+            document.write('Nie jesteś fanem piłki nożnej');
+          }
+          break;
+
+        case 'Gniezno':
+          var pilka = prompt('Czy lubisz piłkę nożną?', 'Tak/Nie' );
+          if (pilka == 'tak'){
+            document.write('Mieszko');
+          }else{
+            document.write('Nie jesteś fanem piłki nożnej');
+          }
+          break;
+      default:
+          document.write('Podałeś inne miasto');
+      }       */
+
+      var haslo = prompt('Podaj hasło');
+      var dlugosc = haslo.length;
+      console.log(dlugosc);
+      var dl;
+
+      if (dlugosc <= 0){
+        dl = 'Błędne';
+      }else if(dlugosc > 0 && dlugosc <= 4){
+        dl = 'Krótkie';
+      }else if (dlugosc > 4 && dlugosc <=8){
+        dl = 'Średnie';
+      }else {
+        dl = 'Długie';
+      }
+      document.write('Hasło jest: ' + dl);
+
+      </script>
+
+    </body>
+</html>
