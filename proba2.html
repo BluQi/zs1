@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html charset="UTF-8">
+<head></head>
+<body>
+<div id="wynik">tresc</div>
+<div id="srednia">tresc2</div>
+    <script>
+    var elwynik = document.getElementById('wynik');
+    var elsrednia = document.getElementById('srednia');
+    var wiekan = prompt("Podoj wiek Anno");
+    var wiektm = prompt("POdoj wiek Tomek");
+    wiekan=Number(wiekan);
+    wiektm=Number(wiektm);
+    var suma = wiekan + wiektm;
+    var srednia = suma/2;
+    srednia=srednia.toFixed(4);
+    elwynik.innerHTML = suma;
+    elsrednia.innerHTML = srednia;
+    </script>
+
+<div id="wynik2">tresc3</div>
+    <script>
+    var elwynik2 = document.getElementById('wynik2');
+    var szesnastk = prompt("Podaj liczbę szestnastkowa");
+    var dzies = '0x' + szesnastk;
+    dzies=Number(dzies);
+    elwynik2.innerHTML=dzies;
+
+
+    </script>
+</body>
+</html>
