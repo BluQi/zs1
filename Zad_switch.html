@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <title>Zad_Dom</title>
+</head>
+<body>
+<script>
+var haslo = prompt('Podaj haslo','haslo');
+var dlugosc = haslo.length;
+console.log(dlugosc);
+var dl;
+switch (dlugosc <=0){
+
+    case true:
+    dl = 'błędne';
+    break;
+    case false:
+        switch (dlugosc > 0 && dlugosc <=4){
+        case true:
+            dl = 'krótkie'.fontcolor("red");
+            break;
+        case false:
+                switch (dlugosc > 4 && dlugosc <=8){
+                    case true:
+                        dl = 'średnie'.fontcolor("blue");
+                        break;
+                    case false:
+                        dl = 'długie'.fontcolor("green");
+                        }
+                    break;
+                }
+        break;
+    }
+
+document.write('Haslo jest ' + dl + '.');
+</script>
+</body>
+
+</html>
