@@ -1,25 +1,70 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Cwiczenia</title>
-    </head>
-    <body>
-        <script>
-        var pc = prompt('Komputer, kąsola, telefon','np. Komputer');
-            switch(pc){
-                case 'Komputer':
-                    var pcmaster = ('Pcmaster race')
-
-
-
-
-
+<head>
+<meta charset="utf-8">
+    <title>Cwiczenie</title>
+</head>
+<body>
+<script>
+    var miasto = prompt('Wpisz swoją miejscowość','Poznań, Swarzędz');
+    switch (miasto){
+        case 'Poznań':
+            var pilka = prompt('Czy jesteś fanem pilk','tak/nie');
+            if (pilka == 'tak'){
+                document.write('Legia Warszawa');
+            }else{
+                document.write('Nie jesteś fanem pilki')
             }
+            break;
+            case 'Swarzędz':
+            var pilka = prompt('Czy jesteś fanem pilk','tak/nie');
+            if (pilka == 'tak'){
+                document.write('Most');
+            }else{
+                document.write('Nie jesteś fanem pilki')
+            }
+            break;
+            case 'Gortatowo':
+            var pilka = prompt('Czy jesteś fanem pilk','tak/nie');
+            if (pilka == 'tak'){
+                document.write('Scena');
+            }else{
+                document.write('Nie jesteś fanem pilki')
+            }
+            break;
+        default:
+            document.write('Nej oszukuj')
+
+}
+    var haslo = prompt('Podaj hasło');
+    var dlugosc = haslo.length
+    console.log = dlugosc
+    var dl
+    if (dlugosc <= 0) {
+        dl = 'blędne'.fontcolor("grey");
+    }else if (dlugosc > 0 && dlugosc <= 4){
+        dl = 'krótkie'.fontcolor("red");
+    }else if (dlugosc > 4 && dlugosc <= 8){
+        dl = 'średnie'.fontcolor("blue");
+    }else if (dlugosc > 8){
+        dl = 'długie'.fontcolor("green");
+    }
+    document.write('<br>Twoje haslo jest ' + dl);
+
+    var miasto2 = prompt('Podaj miejsce zamieszkania','Swarzędz, Poznań, Swadzim');
+    if (miasto2 == 'Swarzędz'){
+        document.write('<br>Poznań misto doznań');
+    }else if (miasto2 == 'Poznań'){
+        document.write('<br>Tu nie żartują');
+    }else if (miasto2 == 'Swadzim'){
+        document.write('<br>Czy ty jesteś normalny');
+    }else{
+        document.write('<br>Nej oszukuj');
+    }
 
 
+</script>
 
-        </script>
-    </body>
+</body>
 
 </html>
